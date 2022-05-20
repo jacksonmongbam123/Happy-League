@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#banner{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 140px;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+.banner-text{
+    background: url('../images/10.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 270px;
+    width: auto;
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+}
+.banner-text h1{
+    margin-top: 50px;
+    font-size: 90px;
+    font-family: 'Kaushan Script', cursive;
+
+}
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+
+    
+}
+.top{
+    width: 100%;
+    height: 2px;
+    background-color: red;
+}
+.contact{
+    background-color: #17202A;
+    position: relative;
+    padding: 80px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.contactInfo{
+    width: 50%;
+    flex-direction: column;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background-color: #fff;
+}
+.contactForm h2{
+    color: rgb(255, 60, 0);
+    font-weight: 500;
+}
+.user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin: 10px;
+    width: calc(100% / 2 - 20px);
+}
+.inputBox input,
+.inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 7px 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    resize: none;
+    color: #000;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: rgb(173, 173, 173);
+}
+.inputBox input:focus ~ span,
+.inputBox input:valid ~ span,
+.inputBox textarea:focus ~ span,
+.inputBox textarea:valid ~ span{
+    color: rgb(255, 0, 0);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.inputBox input[type="submit"]{
+    width: 100px;
+    background: rgb(255, 0, 0);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+}
+.footer{
+    width: 100%;
+    background: #00121b;
+    display: block;
+}
+.inner-footer{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    padding: 50px 10px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.footer-item{
+    width: 25%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.footer-item img{
+    padding: 10px 0;
+    width: 60%;
+}
+.footer-item p{
+    color: #fff;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 22px;
+}
+.footer-item h2{
+    margin: 10px 0;
+    color: grey;
+    font-size: 16px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.border{
+    height: 2px;
+    width: 40px;
+    background: #ff9800;
+}
+.border ul{
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+
+}
+.footer-item ul a{
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    transition: 0.3s;
+}
+.footer-item ul a:hover{
+    color: #ff9800;
+}
+.footer-item ul li{
+    margin: 10px 0;
+    height: 25px;
+    list-style: none;
+}
+.footer-item ul li i{
+    margin-right: 20px;
+    color: #fff;
+}
+.social{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+
+}
+.social a{
+    text-decoration: none;
+}
+.social i{
+    height: 15px;
+    width: 15px;
+    margin: 20px 5px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid grey;
+    transition: 0.3s;
+}
+.social i:hover{
+    background: grey;
+
+}
+.footer-bottom{
+    padding: 8px;
+    background: #3d545f;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media screen and (max-width: 770px){
+    .banner-text{
+        height: 43px;
+    }
+    .banner-text h1{
+        font-size: 44px;
+    
+    }
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+}
+@media screen and (max-width: 991px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .contactInfo{
+        margin-bottom: 50px;
+    }
+    .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1085px){
+    .footer-item{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px){
+    .footer-item{
+        width: 100%;
+    }
+}

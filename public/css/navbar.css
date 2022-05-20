@@ -1,0 +1,65 @@
+#sideNav{
+    width: 250px;
+    height: 85vh;
+    position: fixed;
+    right: -250px;
+    top: 90px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgb(0, 0, 0));
+    z-index: 8;
+    transition: 0.5s;
+
+}
+#sidenav ul{
+    padding: 30px 0px;
+}
+
+#sidenav ul li{
+    padding: 8px;
+    margin: 12px 15px;
+    border-radius: 50px;
+    list-style: none;
+   
+}
+#sidenav .social_media{
+    display: flex;
+    padding: 0px 70px;
+
+}
+#sidenav .social_media a{
+    margin: 8px;
+    height: 13px;
+    width: 13px;
+    display: flex;
+    text-align: center;
+}
+#sidenav ul li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+#sidenav ul li:hover{
+    background-color: #fff;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#sidenav ul li a:hover{
+    color: #000;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+}
